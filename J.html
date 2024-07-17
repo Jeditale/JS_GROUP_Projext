@@ -17,6 +17,7 @@
 </head>
 
 <body style="background-color: #EEF1DB;">
+    
 
     <section class="py-10 md:py-16">
 
@@ -26,13 +27,13 @@
                 <img src="Assets/img/Jlogo.png" alt="Logo" style="width: 70px" class="rounded-full">
 
                 <button
-                    class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Get
+                    class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500" id="mycv">Get
                     my CV</button>
             </nav>
 
             <div id="gradient">
                 <div id="card">
-                    <img src="Assets/img/Jphoto.jpg" class="p-1 "/>
+                    <img src="Assets/img/Jphoto.jpg" class="p-1 " id="jay"/>
                     <h2>Pattaradanai Ysb.</h2>
                     <p>Student of DII in Chiang Mai.</p>
                     <p>Interested in Web technologies like HTML5, CSS3, JavaScript, PHP, MySQL, etc.</p>
@@ -53,6 +54,16 @@
     <section class="py-10 md:py-16">
 
         <div class="container max-w-screen-xl mx-auto px-4">
+            <div id="videoModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50">
+                <div class="bg-white p-4 rounded-lg">
+                    <video id="modalVideo" width="560" height="315" controls>
+                        <source src="Assets/video/Jvid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="closeModal" class="mt-4 px-4 py-2 bg-red-500 text-white rounded">Close</button>
+                </div>
+            </div>
+        
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
@@ -60,10 +71,9 @@
                         <i data-feather="activity"></i>
                     </div>
 
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">High experience</h4>
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">Always Learning</h4>
 
-                    <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
-                        elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-normal text-gray-500 text-md">I'm always teaching myself new things everyday. <br> I'd reading anything worth study or work on, <br> currently I am studying OpenGL </p>
                 </div>
 
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
@@ -71,10 +81,9 @@
                         <i data-feather="codesandbox"></i>
                     </div>
 
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">Useful sandboxes</h4>
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">Thinking Out Of Box</h4>
 
-                    <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
-                        elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-normal text-gray-500 text-md">Sometimes I solves problems by trying new things <br> despite, of having old methods but there might be better solution, <br> That's how I learned new things.</p>
                 </div>
 
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
@@ -82,10 +91,9 @@
                         <i data-feather="coffee"></i>
                     </div>
 
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">Success side projects</h4>
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">Many Success projects</h4>
 
-                    <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
-                        elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-normal text-gray-500 text-md">I have worked on many projects<br> I always made it before deadline <br> althought there is a though projects that,I still working on!</p>
                 </div>
             </div>
 
@@ -112,11 +120,9 @@
                         <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                         <div>
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Demo API Generator</h1>
+                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Company DATAENGINEER</h1>
 
-                            <p class="font-normal text-gray-500 text-sm md:text-base">A dummy data free and documented
-                                API generator to facilitate <br> the process of testing the front-end portion of
-                                projects.</p>
+                            <p class="font-normal text-gray-500 text-sm md:text-base">I am the Data engineer for this company Skibidi Toilet Productions Inc.(Manager)<br> my role is to manage the server and make the Database for the comany :)</p>
                         </div>
                     </div>
 
@@ -126,11 +132,9 @@
                         <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                         <div>
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Demo API Generator</h1>
+                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Remote Controlled Lawnmower</h1>
 
-                            <p class="font-normal text-gray-500 text-sm md:text-base">A dummy data free and documented
-                                API generator to facilitate <br> the process of testing the front-end portion of
-                                projects.</p>
+                            <p class="font-normal text-gray-500 text-sm md:text-base">I was doing this project because I was lazy to <br> Go out and lawn my garden because it was too hot.</p>
                         </div>
                     </div>
 
@@ -140,11 +144,9 @@
                         <span class="w-28 h-0.5 bg-gray-300 mt-5"></span>
 
                         <div>
-                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Demo API Generator</h1>
+                            <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">Dishwasher that can speaks</h1>
 
-                            <p class="font-normal text-gray-500 text-sm md:text-base">A dummy data free and documented
-                                API generator to facilitate <br> the process of testing the front-end portion of
-                                projects.</p>
+                            <p class="font-normal text-gray-500 text-sm md:text-base">I was dared by my friends to do <br> So I made one with C (Arduino) </p>
                         </div>
                     </div>
                 </div>
@@ -153,6 +155,14 @@
         </div>
 
     </section>
+<section>
+    <div class="">
+        <div class="container max-w-screen-xl mx-auto  flex justify-center items-center h-screen">
+            <iframe src="https://scratch.mit.edu/projects/1040572283/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+    
 
     <section class="py-10 md:py-16">
 
@@ -164,74 +174,42 @@
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
+                
 
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                
+
+                <div class="bg-gray-50 px-8 py-10 rounded-md">
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">2018 – 2022</h4>
+
+                    <p class="font-normal text-gray-500 text-md mb-4">I was studied In A RIZZ Skibidi High school<br>
+                        </p>
 
                     <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
+                        <a href="https://maps.app.goo.gl/YBdznoJwwZ42XkgY6"><h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6></a>
                         <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
                     </div>
                 </div>
 
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">2022 – currently</h4>
 
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-normal text-gray-500 text-md mb-4">Working in Skibidi Toilet Productions Inc.(Self Studied) <br>
+                        </p>
 
                     <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
+                        <a href="https://maps.app.goo.gl/uMMC5d8r3MPpiASj8"><h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6></a>
                         <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
                     </div>
                 </div>
 
                 <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
+                    <h4 class="font-medium text-gray-700 text-lg mb-4">2023 – currently</h4>
 
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
-                        <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                    <p class="font-normal text-gray-500 text-md mb-4">studying In DII Department of Chiangmai University <br>
+                        While being full stack sigma <br> Always giving rizz to new student(Also Advice to be Alpha male).</p>
 
                     <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
-                        <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
-                        <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-                    <h4 class="font-medium text-gray-700 text-lg mb-4">2015 – 2016</h4>
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <div class="relative">
-                        <h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6>
+                        <a href="https://go.camt.cmu.ac.th/index.php/th/major/bachelor/bachelor-dii"><h6 class="font-semibold text-gray-500 text-md relative z-10">See the place here</h6></a>
                         <span class="w-32 h-1 bg-blue-200 absolute bottom-1 left-0 z-0"></span>
                     </div>
                 </div>
@@ -271,48 +249,37 @@
                 <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
                     <h6 class="font-medium text-gray-400 text-base uppercase">Company</h6>
 
-                    <p class="font-semibold text-gray-600 text-base">Massa Fames <span
-                            class="font-normal text-gray-300">/ New York</span></p>
+                    <p class="font-semibold text-gray-600 text-base">Skibidi Toilet Productions Inc. <span
+                            class="font-normal text-gray-300">/ Clifford</span></p>
 
-                    <p class="font-semibold text-gray-600 text-base">Massa Fames <span
-                            class="font-normal text-gray-300">/ New York</span></p>
+                    <p class="font-semibold text-gray-600 text-base">RA&T Co. <span
+                            class="font-normal text-gray-300">/ Home</span></p>
 
-                    <p class="font-semibold text-gray-600 text-base">Massa Fames <span
-                            class="font-normal text-gray-300">/ New York</span></p>
-
-                    <p class="font-semibold text-gray-600 text-base">Massa Fames <span
-                            class="font-normal text-gray-300">/ New York</span></p>
-
-                    <p class="font-semibold text-gray-600 text-base">Massa Fames <span
-                            class="font-normal text-gray-300">/ New York</span></p>
+                    <p class="font-semibold text-gray-600 text-base">hazbin hotel <span
+                            class="font-normal text-gray-300">/ Hell</span></p>
                 </div>
 
                 <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
                     <h6 class="font-medium text-gray-400 text-base uppercase">Position</h6>
+                    <p class="font-normal text-gray-400 text-base">Junior Back-End Developer</p>
+
+                    <p class="font-normal text-gray-400 text-base">Junior Full-stack Developer</p>
 
                     <p class="font-normal text-gray-400 text-base">Junior Front-End Developer</p>
 
-                    <p class="font-normal text-gray-400 text-base">Junior Front-End Developer</p>
-
-                    <p class="font-normal text-gray-400 text-base">Junior Front-End Developer</p>
-
-                    <p class="font-normal text-gray-400 text-base">Junior Front-End Developer</p>
-
-                    <p class="font-normal text-gray-400 text-base">Junior Front-End Developer</p>
+                   
                 </div>
 
                 <div class="space-y-8 md:space-y-16">
                     <h6 class="font-medium text-gray-400 text-base uppercase">Year</h6>
 
-                    <p class="font-normal text-gray-400 text-base">2016</p>
+                    <p class="font-normal text-gray-400 text-base">2022</p>
 
-                    <p class="font-normal text-gray-400 text-base">2016</p>
+                    <p class="font-normal text-gray-400 text-base">2023</p>
 
-                    <p class="font-normal text-gray-400 text-base">2016</p>
+                    <p class="font-normal text-gray-400 text-base">2024</p>
 
-                    <p class="font-normal text-gray-400 text-base">2016</p>
-
-                    <p class="font-normal text-gray-400 text-base">2016</p>
+                    
                 </div>
             </div>
 
@@ -346,118 +313,35 @@
         </div>
 
     </section>
+    
 
-    <section class="py-10 md:py-16">
-
-        <div class="container max-w-screen-xl mx-auto px-4">
-
-            <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">Testimonial</h1>
-
-            <p class="font-normal text-gray-500 text-xs md:text-base mb-10 md:mb-20">Below is a summary of the places I
-                studied</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-
-                <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                    <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br>
-                        adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                    <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span
-                            class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
 
     <footer class="py-10 md:py-16 mb-20 md:mb-40 lg::mb-52">
 
         <div class="container max-w-screen-xl mx-auto px-4">
 
             <div class="text-center">
-                <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Testimonial</h1>
+                <h1 class="font-medium text-gray-700 text-4xl md:text-5xl mb-5">Hiring Me?</h1>
 
-                <p class="font-normal text-gray-400 text-md md:text-lg mb-20">I’m not currently taking on new client
-                    work but feel free to contact me for any <br> other inquiries.</p>
+                <div id="MOVINGBTN">
+                   
+                        <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Yes</button>
+                        <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" id="move" onmouseover="runaway(this)">NO</button>
+                </div>
+
 
                 <div class="flex items-center justify-center space-x-8">
-                    <a href="#"
-                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="twitter"
-                            class="text-gray-500 hover:text-gray-800 transition ease-in-out duration-500"></i>
-                    </a>
+                    
 
-                    <a href="#"
-                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="dribbble"
-                            class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
+                   
 
-                    <a href="#"
+                    <a href="https://www.facebook.com/profile.php?id=100021072032411"
                         class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
                         <i data-feather="facebook"
                             class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
                     </a>
 
-                    <a href="#"
-                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="codepen"
-                            class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#"
-                        class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
-                        <i data-feather="at-sign"
-                            class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
-                    </a>
-
-                    <a href="#"
+                    <a href="https://www.instagram.com/jeditale/"
                         class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-gray-200 transition ease-in-out duration-500">
                         <i data-feather="instagram"
                             class="text-gray-500 hover:text-gray-700 transition ease-in-out duration-500"></i>
@@ -469,7 +353,7 @@
 
     </footer>
 
-
+    <script src="Assets/Js/J.js"></script>
     <script>
         feather.replace()
     </script>

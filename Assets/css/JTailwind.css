@@ -193756,7 +193756,7 @@ body {
     padding: 25px;
     padding-top: 0;
     padding-bottom: 0;
-    left: 51%;
+    left: 50.9%;
     top: 255px;
     margin-left: -250px;
     background: #E9E2D0;
@@ -193770,11 +193770,12 @@ body {
       left: 52%;
     }
   }
+  
   @media (max-width: 600px) {
     #card {
       
-      top: 210px;
-      left: 52%;
+      top: 230px;
+      left: 53%;
     }
   }
   
@@ -193813,3 +193814,22 @@ body {
   #card span {
     font-family: courier;
   }
+#MOVINGBTN{
+    width: 300px;
+    height: 100px;
+    
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+#MOVINGBTN button{
+    
+    
+    
+}
+#move{
+    position: relative;
+}
