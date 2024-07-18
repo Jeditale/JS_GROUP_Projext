@@ -189,9 +189,12 @@ h4 {
 	border: none;
 }
 
-.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+.nav>a, .nav>a:hover, .nav>a:focus {
     background-color: #eee;
     border-color: transparent;
+}
+.navbar-nav>li:hover{
+	background-color: #bdbeae90;
 }
 
 @media screen and (min-width:768px) {
@@ -340,7 +343,7 @@ h4 {
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
 	margin-top: 110px;
-	margin-left: 200px;
+	
 }
 
 .box-home a {
@@ -356,10 +359,8 @@ h4 {
 
 
 .photo-home {
-	margin-top: 60px;
-	margin-bottom: 30px;
-	margin-left: 125px;
-	padding: auto;
+	margin: 60px 125px 30px 125px;
+	float: right;
 	
 }
 
