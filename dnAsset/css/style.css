@@ -10,6 +10,7 @@ body {
 	background-position: left top;
 	background-repeat: repeat;
 	-webkit-font-smoothing: antialiased;
+	
 }
 
 a {
@@ -384,7 +385,6 @@ h4 {
 	display: inline;
 	font-weight: 400;
 }
-
 
 
 
