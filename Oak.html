@@ -81,8 +81,33 @@
 <img src="Assets/img/oakp.jpg" alt="Admin" class="rounded-circle" width="150">
 <div class="mt-3">
 <h4>Jedsadaporn Pothiklang </h4>
+<div id="output"></div>
+<script>
+    function typeWriter(text, elementId, delay, loop) {
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                document.getElementById(elementId).innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, delay);
+            } else if (loop) {
+                setTimeout(() => {
+                    document.getElementById(elementId).innerHTML = '';
+                    typeWriter(text, elementId, delay, loop);
+                }, delay);
+            }
+        }
+        type();
+    }
 
-<p class="text-secondary mb-1">Font - end Developer</p>
+
+    const text = "Font - End Developer";
+    const elementId = "output";
+    const delay = 100; // ความล่าช้าในหน่วยมิลลิวินาที
+    const loop = true;
+
+    typeWriter(text, elementId, delay,loop);
+</script>
 </br>
 <button class="btn btn-primary">Follow</button>
 <button class="btn btn-outline-primary">Message</button>
